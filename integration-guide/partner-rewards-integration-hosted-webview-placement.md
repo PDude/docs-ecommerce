@@ -7,6 +7,8 @@ description: Falcon Partner Rewards is a hosted page that presents relevant offe
 
 The Partner Rewards unit runs inside a webview in your app.
 
+> **See also:** [Falcon PerkWall](/integration-guide/falcon-perkwall) — a branded perks page of up to 10 offers that you load as a hosted webview placement, just like this one.
+
 ## Before you begin
 
 The placement uses two identifiers, both preconfigured on the Falcon side and provided by your Falcon Labs account manager:
@@ -32,7 +34,7 @@ https://pr.falconlabs.us/partners-rewards?placementId=YOUR_PLACEMENT_ID&publicAp
 
 ### User data
 
-To sharpen match rate and payout, add user or order attributes to the URL, each with an `at.` prefix. Pass at least the user ID, country, and whether the user is paying or non-paying. URL-encode any special characters.
+To sharpen match rate and payout, add user or order attributes to the URL, each with an `at.` prefix. Pass at least the user ID and country. URL-encode any special characters.
 
 ```text
 .../partners-rewards?placementId=...&publicApiKey=...&sessionId=...&at.country=US&at.email=user%40example.com
